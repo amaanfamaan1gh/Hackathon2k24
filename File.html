@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Order Delivery</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Delicious cheese pizza.</p>
+                <button onclick="addToOrder('Pizza', 10)">Add to Order - $10</button>
+            </div>
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>Juicy beef burger with lettuce and tomato.</p>
+                <button onclick="addToOrder('Burger', 8)">Add to Order - $8</button>
+            </div>
+            <!-- Add more menu items as needed -->
+        </section>
+
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="order-list"></ul>
+            <p id="total-price">Total: $0</p>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Order Delivery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
